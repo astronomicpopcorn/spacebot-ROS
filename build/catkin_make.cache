@@ -1,0 +1,2 @@
+beginner_tutorials:spacebot
+-DCATKIN_DEVEL_PREFIX=/home/spacebot/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/spacebot/catkin_ws/install -G Unix Makefiles

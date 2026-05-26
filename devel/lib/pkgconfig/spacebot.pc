@@ -1,0 +1,8 @@
+prefix=/home/spacebot/catkin_ws/devel
+
+Name: spacebot
+Description: Description of spacebot
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
