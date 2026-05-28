@@ -37,10 +37,12 @@ def send_udp_packet(msg):
 def udp_communication():
     print("Starting ROS Node...")
     rospy.init_node("spacebot_udp_communication")
-    rospy.Subscriber("spacebot_target_speeds", Twist, send_udp_packet)
-    rospy.spin()
     print("ROS Node started!")
-    
+    rospy.Subscriber("spacebot_target_speeds", Twist, send_udp_packet)
+    print("Subscribed to 'spacebot_target_speeds' successfully!")
+    print("Spinning...")
+    rospy.spin()
+    print("No longer spinning.")
 
 if __name__ == '__main__':
     udp_communication()
